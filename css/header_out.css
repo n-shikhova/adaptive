@@ -1,0 +1,212 @@
+.header {
+  position: relative;
+  box-shadow: 2px 3px 15px 0px rgba(0, 0, 0, 0.15);
+  background-color: #f5f7fa;
+  padding: 0 10px;
+}
+.header__wrapper {
+  position: relative;
+  display: block;
+  align-items: center;
+  height: 84px;
+  padding: 10px;
+}
+.header-logo {
+  font-family: 'Myriad Bold';
+  font-weight: bold;
+  font-size: 2.6rem;
+  line-height: 1.7rem;
+  float: left;
+}
+.header-logo span {
+  font-family: 'Myriad Regular';
+  font-weight: 400;
+  font-size: 2.6rem;
+  color: #73c450;
+  float: left;
+}
+.header-navigation {
+  margin-top: 1.3rem;
+  float: left;
+  display: block;
+}
+.header-navigation__list {
+  display: flex;
+  list-style: none;
+  margin-left: 5rem;
+  float: left;
+}
+.header-navigation__item:not(:last-child) {
+  padding-right: 3rem;
+}
+.header-navigation__link {
+  font-weight: bold;
+  text-transform: uppercase;
+  background: transparent;
+  border: none;
+  color: #4d8a3c;
+  outline: none;
+  cursor: pointer;
+}
+.header-navigation__link:not(:last-child) {
+  padding-right: 3rem;
+}
+.header-navigation__link:hover {
+  color: #8a2e24;
+  transition: all 0.5s;
+}
+.header-authorization {
+  display: flex;
+  float: right;
+  margin-top: 10px;
+}
+.header__container {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.header .sign-in {
+  font-weight: bold;
+  text-transform: uppercase;
+  background: transparent;
+  border: none;
+  color: #fff;
+  outline: none;
+  margin-right: 80px;
+  cursor: pointer;
+  z-index: 100;
+  background-color: #6ec157;
+  border-radius: 31px;
+  padding: 0.7rem 1.2rem;
+  transition: all 0.9s;
+}
+.header .sign-in:hover {
+  background-color: #000;
+  border-radius: 31px;
+  padding: 0.7rem 1.2rem;
+  transition: all 0.9s;
+}
+.header .sign-up {
+  font-weight: bold;
+  text-transform: uppercase;
+  background: transparent;
+  border: none;
+  color: #000;
+  outline: none;
+  cursor: pointer;
+  z-index: 100;
+}
+.header .sign-up:hover {
+  color: #fff;
+}
+.green {
+  position: absolute;
+  right: 0;
+  top: 0;
+  box-sizing: content-box;
+  height: 0;
+  width: 34.15%;
+  margin-left: 63%;
+  border-bottom: 85px solid #6ec157;
+  border-left: 130px solid transparent;
+}
+.menu2 {
+  display: none;
+  padding: 0 1% 2%;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  z-index: 2000;
+  width: 100%;
+  text-align: right;
+}
+.menu2__input {
+  display: none;
+}
+.menu2__input:checked ~ nav {
+  margin: 10px auto 0;
+  max-height: 500px;
+  background: linear-gradient(0deg, #61ba6d 0%, #88cf2d 100%) repeat scroll 0;
+  right: -12px;
+  width: 100%;
+}
+.menu2__label {
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.15s ease;
+  background: linear-gradient(0deg, #61ba6d 0%, #88cf2d 100%) repeat scroll 0;
+  border: 2px solid #61ba6d;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+}
+.menu2__nav {
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.15s ease;
+  z-index: 100;
+  position: absolute;
+}
+.menu2__ul {
+  list-style: none;
+  margin: 8px 0;
+  padding: 0;
+}
+.menu2__li {
+  margin: 1%;
+}
+.menu2__link {
+  background-color: white;
+  font-size: 1rem;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  perspective-origin: 84.0625px 20px;
+  transform-origin: 84.0625px 20px;
+  border: #8a8d86;
+  line-height: 2.4rem;
+  /* font-family: 'ProximaNova-Reg', 'Arial', sans-serif; */
+  font-weight: 500;
+  color: #525252;
+  list-style: square inside none;
+  outline: white none 0px;
+  transition: all 0.3s linear 0s;
+}
+.menu2__link:focus {
+  background-color: #f5e7df;
+}
+.menu2__link:hover {
+  background-color: #f5e7df;
+}
+@media screen and (max-width: 1210px) {
+  .header-navigation {
+    display: none;
+  }
+  .header-authorization {
+    display: none;
+  }
+  .min-900 {
+    display: block !important;
+  }
+  .header__wrapper {
+    height: 70px;
+  }
+  .green {
+    display: none;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .green {
+    width: 26%;
+    margin-left: 63%;
+    border-bottom: 84px solid #6ec157;
+    border-left: 76px solid transparent;
+  }
+  .header-navigation__list {
+    margin-left: 2rem;
+  }
+}

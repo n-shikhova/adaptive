@@ -1,0 +1,217 @@
+.profile__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.profile__text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+}
+.profile__box-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile__box-photo img {
+  margin-right: 3rem;
+  height: 7rem;
+  border-radius: 50%;
+  border: 2px solid #6c6;
+}
+.profile__input {
+  display: none;
+}
+.profile__label {
+  width: 100%;
+  max-width: 490px;
+  border: 1px solid #999;
+  padding: 1.2rem 0 1.2rem 1.2rem;
+  display: block;
+  position: relative;
+  background-color: #e9faeb;
+  margin-left: 3rem;
+  border-radius: 31px;
+  cursor: pointer;
+}
+.info__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+}
+.info__form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.info__input {
+  width: 48%!important;
+  max-width: 555px;
+}
+.info__check {
+  margin-top: 10px;
+}
+.registration {
+  margin-bottom: 7rem;
+}
+.registration__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.registration__title{
+		font-size: 1.5rem;
+		font-weight: bold;
+		text-align: center;
+		margin-top: 4rem;
+		margin-bottom: 5rem;
+	}
+
+.registration__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0 0 0;
+}
+.registration__item {
+  border-radius: 31px;
+  width: 100%;
+  max-width: 263px;
+  margin: 10px;
+}
+.registration__item:nth-child(1) {
+  background-color: #2f76a6;
+  position: relative;
+}
+.registration__item:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  background-image: url('../img-registration/vk-icon.png');
+  background-size: cover;
+  width: 2.5rem;
+  height: 2.1rem;
+  top: 1rem;
+  left: 1.5rem;
+}
+.registration__item:nth-child(2) {
+  background-color: #3d67ba;
+  position: relative;
+}
+.registration__item:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  background-image: url('../img-registration/fb-icon.png');
+  background-size: cover;
+  width: 2.1rem;
+  height: 2.1rem;
+  top: 1rem;
+  left: 1.5rem;
+}
+.registration__item:nth-child(3) {
+  background-color: #ff7b00;
+  position: relative;
+}
+.registration__item:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  background-image: url('../img-registration/od-icon.png');
+  background-size: cover;
+  width: 1rem;
+  height: 2.1rem;
+  top: 1rem;
+  left: 1.5rem;
+}
+.registration__item:nth-child(4) {
+  background-color: #ff4934;
+  position: relative;
+}
+.registration__item:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  background-image: url('../img-registration/g-icon.png');
+  background-size: cover;
+  width: 1.7rem;
+  height: 2rem;
+  top: 1rem;
+  left: 1.5rem;
+}
+.registration__link {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1.1rem 4rem;
+}
+.registration__od {
+  padding: 1.3rem 3rem;
+  font-size: 1.2rem !important;
+}
+.payment {
+  max-width: 760px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+.payment__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.payment__file {
+  display: none;
+}
+.payment__label {
+  width: 100%;
+  border-radius: 31px;
+  border: 1px solid #999;
+  background: url(p.png) top 50% right 20px no-repeat;
+  padding: 1.2rem 0 1.2rem 1.2rem;
+  display: block;
+  position: relative;
+  background-color: #e9faeb;
+  cursor: pointer;
+}
+.edit {
+  background-color: #ccc;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.edit__button {
+  color: #fff;
+  width: 100%;
+  max-width: 585px;
+  text-transform: uppercase;
+  background-color: #000;
+  border-radius: 31px;
+  display: block;
+  padding: 1rem 0;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.edit__remove {
+  color: #fff;
+  width: 100%;
+  max-width: 585px;
+  text-transform: uppercase;
+  border-radius: 31px;
+  display: block;
+  padding: 1rem 0;
+  border: none;
+  background-color: #cc9999;
+  cursor: pointer;
+  outline: none;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer {
+  margin-top: 5px !important;
+}
+@media screen and (max-width: 700px) {
+  .mail__input {
+    width: 100% !important;
+  }
+}

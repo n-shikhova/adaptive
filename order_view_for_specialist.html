@@ -1,0 +1,279 @@
+<!--
+Так видят страницу пользователи (не тот что создал), после того, как исполнитель определится, только он видит эту страницу.
+
+
+На этапе конкурса: черная кнопка - "участвовать в конкурсе" - с модальным окном
+
+Статус заказа: заказ открыт, требуется исполнитель!
+
+Подзаголовок: Вы можете участвовать в конкурсе за выполнение этого закза!
+
+
+
+
+На этапе активного заказа - конпка:"подтвердить выполнение" - без модального окна
+
+Статус заказа: Вас выбрали исполнителем этого заказа! Ожидается исполнение!
+
+Подзаголовок: Когда работа будет выполнена нажмите кнопку "Подтвердить выполнение"
+
+
+
+
+
+После того, как оставлен отзыв - конпка:"отзыв от заказчика" - ссылка на отзывы
+
+Статус заказа: Завершение заказа подтверждено заказчиком!
+
+Подзаголовок: Заказчик завершил заказ, спасибо за сотрудничество!
+
+
+Иконки цели заменяются на галочки по ходу выполнения заказа
+
+
+
+История этапы:
+
+
+История изменений заказа
+
+22.09.2020 в 14:27 - Заказчик оставил положительный (нейтральный\негативный) отзыв о сотрудничестве.
+22.09.2020 в 14:27 - Заказ закрыт. (Оплата переведена исполнителю. - пока про оплату не пишем)
+22.09.2020 в 13:49 - Исполнитель уведомил о выполненной работе.
+15.09.2020 в 17:42 - Исполнитель определен.
+15.09.2020 в 17:39 - Создан заказ "ххххххх", срок х дней, бюджет хх ххх р. 
+
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Заказ</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/header_spesialist.css">	
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="./css/order_view_for_customer.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="plugin/css/plugin.css">
+	
+</head>
+<body>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLongTitle">Заявка на участие</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        			<form action="#" class="question__form">
+				
+				<textarea  class="" name="" id="" placeholder="Сообщение:"></textarea>
+				<input style="margin-bottom: 0!important;" class="" type="text" placeholder="Предложить цену:">
+				<button class="submit">Отправить заявку</button>
+			</form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<header class="header2">
+		<div class="header2__container">
+			<div class="header2__wrapper">
+				<div class="logo">YOUR<br> <span>Services</span></div>
+				<nav class="site-navigation2">
+					<ul class="site-navigation2__list">
+						<li class="site-navigation2__item">
+							<a href="messages.html" class="site-navigation2__link">Сообщения</a>
+						</li>
+						<li class="site-navigation2__item">
+							<a href="spesialist_orders.html" class="site-navigation2__link">Мои заказы</a>
+						</li>
+						<li class="site-navigation2__item">
+							<a href="rekl.html" class="site-navigation2__link">Разместить объявление</a>
+						</li>
+					</ul>
+				</nav>
+
+						<nav class="header2-authorization">
+				
+  <ul class="topmenu2">
+    <li><button class="logout2">Выход</button></li>
+   
+    <li><button class="specialist-info2">	Исполнитель: ИВАН ИВАНОВ	 </button></a>
+      <ul class="submenu2">
+	 <li><a href="spesialist_profile.html" class="submenu__а">Личный кабинет</a></li>	 
+	 <li><a href="spesialist_orders.html" class="submenu__а">Мои заказы</a></li>
+	 <li><a href="catalog.html" class="submenu__а">Каталог услуг</a></li>
+	 <li><a href="all_orders.html" class="submenu__а">Все заказы</a></li>
+	 <li><a href="messages.html" class="submenu__а">Сообщения</a></li>
+	 <!-- 
+	 <li><a href="history_money.html" class="submenu__а">Баланс</a></li>
+	 <li><a href="deposit_money.html" class="submenu__а">Пополнить счет</a></li>
+	 <li><a href="payout_money.html" class="submenu__а">Вывести деньги</a></li>-->
+	 <li><a href="arbitration.html" class="submenu__а">Арбитраж</a></li>
+	 <li><a href="customer_profile.html" class="submenu__а">Войти как исполнитель</a></li>		 
+     <li><a href="general_edit_profile.html" class="submenu__а">Настройки</a></li>	
+     <li><a href="rekl.html" class="submenu__а">Разместить объявление</a></li> 
+	 <li><a href="exit.html" class="submenu__а">Выход</a></li>
+      </ul>
+    </li>
+    
+  </ul>
+</nav>
+<div class="menu2 min-900">	
+				
+				
+			   <input class="menu2__input" type="checkbox" id="toggle">
+			
+			<label class="menu2__label" for="toggle">
+&#9776;
+
+            </label>
+
+<nav id="menu-mobil" class="menu2__nav" style="z-index: 100;">
+  <ul class="menu2__ul">
+	 <li class="menu2__li"><a class="menu2__link">Личный кабинет</a></li>
+	 <li class="menu2__li"><a class="menu2__link">Создать заказ</a></li>
+	 <li class="menu2__li"><a class="menu2__link">Сообщения</a></li>
+	 <li class="menu2__li"><a class="menu2__link">Мои заказы</a></li>
+	 <li class="menu2__li"><a class="menu2__link">Настройки</a></li>
+	 <li class="menu2__li"><a class="menu2__link">Баланс</a></li>
+	 <li class="menu2__li"><a class="menu2__link">Пополнить счет</a></li>
+	 <li class="menu2__li"><a class="menu2__link">Вывести деньги</a></li>
+	 <li class="menu2__li"><a class="menu2__link">Арбитраж</a></li>
+	 <li class="menu2__li"><a class="menu2__link">Войти как исполнитель</a></li>	 
+	 <li class="menu2__li"><a class="menu2__link">Выход</a></li>
+
+
+	 <li class="menu2__li"><a href="spesialist_profile.html" class="menu2__link">Личный кабинет</a></li>	 
+	 <li class="menu2__li"><a href="spesialist_orders.html" class="menu2__link">Мои заказы</a></li>
+	 <li class="menu2__li"><a href="catalog.html" class="menu2__link">Каталог услуг</a></li>
+	 <li class="menu2__li"><a href="all_orders.html" class="menu2__link">Все заказы</a></li>
+	 <li class="menu2__li"><a href="messages.html" class="menu2__link">Сообщения</a></li>
+	 <!-- 
+	 <li class="menu2__li"><a href="history_money.html" class="menu2__link">Баланс</a></li>
+	 <li class="menu2__li"><a href="deposit_money.html" class="menu2__link">Пополнить счет</a></li>
+	 <li class="menu2__li"><a href="payout_money.html" class="menu2__link">Вывести деньги</a></li>-->
+	 <li class="menu2__li"><a href="arbitration.html" class="menu2__link">Арбитраж</a></li>
+	 <li class="menu2__li"><a href="customer_profile.html" class="menu2__link">Войти как исполнитель</a></li>		 
+     <li class="menu2__li"><a href="general_edit_profile.html" class="menu2__link">Настройки</a></li>	
+     <li class="menu2__li"><a href="rekl.html" class="menu2__link">Разместить объявление</a></li> 
+	 <li class="menu2__li"><a href="exit.html" class="menu2__link">Выход</a></li>
+
+
+  </ul>
+</nav>					
+		</div>	
+							
+				
+			</div>
+		</div>
+	</header>
+	
+
+	
+	<section class="order">
+		<div class="order__container">
+			<h1 class="order__title">Дизайн магазина Мебель на заказ</h1>
+			<div class="order__info">
+				<div class="order__img">
+					<img src="img-messendg/photo-icon.png" alt="">
+					<div class="order__status">онлайн</div>
+				</div>
+				<div class="order__user-info">
+					<p class="order__name">Имя Фамилия</p>
+					<p class="order__location">Россия, Екатеринбург</p>
+				</div>
+				<div class="order__rate">
+					<p class="order__cost">Стоимость: <span>30 000 р</span></p>
+					<p class="order___time">Срок: <span>7 дней</span></p>
+				</div>
+			</div>
+			<ul class="order__list">
+				<li class="order__item">Создание заказа</li>
+				<li class="order__item">Согласование условий</li>
+				<li class="order__item">Выполнение работы</li>
+				<li class="order__item">Завершение заказа</li>
+			</ul>
+		</div>
+	</section>
+	<section class="statistics">
+		<div class="statistics__container">
+			<div class="statistics__wrapper">
+				<p class="statistics__title">Статус заказа: заказ открыт, требуется исполнитель!</p>
+				<p class="statistics__info">Вы можете участвовать в конкурсе за выполнение этого закза!</p>
+			
+			
+
+
+			<button class="statistics__button submit">обсудить заказ</button>
+			
+			<!-- Button trigger modal -->
+
+			
+				<button type="button" class="statistics__button submit_black" data-toggle="modal" data-target="#exampleModalCenter">участвовать в конкурсе</button>
+				
+				<div class="statistics__box">
+				<p class="statistics__text">Добрый день. Нужен дизайн (и возможно верстка) интернет-магазин "мебель на заказ" + мобильная версия</p>
+				<p class="statistics__text">Требование к фрилансеру:</p>
+<p class="statistics__text">-опыт работы и портфолию с похожими проектами;</p>
+<p class="statistics__text">-креативный подход к дизайну;</p>
+<p class="statistics__text">-оперативная связь с Заказчиком;</p>
+</div>
+
+				<div class="statistics__history">
+					<p class="statistics__change">История изменений заказа</p>
+					<p>22.09.2020 в 13:49 - Исполнитель уведомил о выполненной работе.</p>
+					<p>15.09.2020 в 17:42 - Исполнитель определен.</p>
+					<p>15.09.2020 в 17:39 - Создан заказ "Дизайн магазина Мебель на заказ", срок 7 дней, бюджет 30 000 р</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+			<div class="container__footer">
+				<div class="footer__wrapper">
+					<div class="footer__column">
+						<div class="footer__logo">YOUR<br> <span>Services</span></div>
+						<div class="footer__copyright">&copy; 2020 YOUR Services. Все права защищены</div>
+					</div>
+					<ul class="footer__column">
+						<li class="footer__item">
+							<a href="#" class="footer__link">Политика конфиденциальности</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Пользовательское соглашение</a>
+						</li>
+					</ul>
+					<div class="footer__column">
+						<div>
+						    <a href="#" class="footer__button">Написать нам</a>
+					     </div>
+						<a href="#" class="footer__mail">info@your-services.ru</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
+

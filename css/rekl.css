@@ -1,0 +1,38 @@
+.rekl__form {
+  max-width: 790px;
+  margin: 3rem auto 0;
+  padding: 0 10px;
+}
+.rekl__file {
+  display: none;
+}
+.rekl__label {
+    width: 100%;    
+    border-radius: 31px;
+    border: 1px solid #999;
+    background: url(p.png) top 50% right 20px no-repeat;
+    padding: 1.2rem 0 1.2rem 1.2rem;
+    display: block;
+    position: relative;
+    background-color: #e9faeb;
+    cursor: pointer;
+}
+
+
+.rekl h2{
+	    margin: 3rem 0;
+}
+
+.rekl p {
+    color: rgb(132 205 50);
+    margin-bottom: 3rem;
+}
+
+.form__select {
+    border: 1px solid #999;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(g.png) top 50% right 20px no-repeat;
+    background-color: #f5f7fa;
+}

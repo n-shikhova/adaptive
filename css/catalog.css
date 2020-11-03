@@ -1,0 +1,148 @@
+.box {
+  background: linear-gradient(0deg, #61ba6d 0%, #88cf2d 100%);
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.box-2 {
+  margin-top: 180px;
+}
+.box__container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.box__list {
+  padding-top: 63px;
+  padding-bottom: 74px;
+  display: flex;
+  justify-content: space-around;
+}
+.box__item {
+  width: 100%;
+  max-width: 250px;
+}
+.box__img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.box__info {
+  width: 248px;
+  padding: 0.6rem;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 9px;
+  min-height: 120px;
+}
+.box__text {
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.3rem;
+  text-align: center;
+}
+.box__price {
+  font-size: 14px;
+  font-weight: bold;
+  color: green;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.4rem;
+}
+.box__price-2 {
+  margin-top: -15px;
+}
+
+.catalog__container{
+	max-width: 1200px;
+    width: 100%;
+    margin: 5rem auto 0;
+	padding: 0 10px;
+	
+}
+.catalog__service{
+	float: left;
+    width: 40%;
+    padding: 1rem 2rem;
+}
+
+.catalog__popular{
+	float: left;
+    width: 59%;
+    border-left: rgb(187 187 187) 4px solid;
+    padding: 1rem 2rem;
+}
+.catalog__popular h2{
+	color: rgb(99 187 105);
+    font-weight: bold;
+    margin-bottom: 3rem;
+    text-align: left;
+	
+}
+
+.dropdown-toggle{
+	
+    width: 100%;
+    text-align: left;
+    color: #000;
+    background-color: white;
+    border-bottom: 2px solid rgb(191 191 191);
+    border-top: 2px solid rgb(255 255 255);
+    border-left: 2px solid rgb(255 255 255);
+    border-right: 2px solid rgb(255 255 255);
+    font-size: 1.2rem;
+    padding: 1rem 0;
+	
+}
+
+
+.dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+	color: rgb(99 187 105);
+}
+
+.dropdown-item {
+    
+    padding: .5rem 1.5rem!important;
+   
+}
+
+.dropdown-menu {
+	
+	width: 100%!important;
+	position: relative!important;
+    transform: none!important;
+	border:none!important;
+}
+
+.m-r-10 {
+	
+  margin-right: 10px;
+}
+.footer {
+  margin-top: 5px !important;
+}
+
+@media screen and (max-width: 1020px) {
+  .box{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+	.catalog__popular{
+		display: none;
+  }
+  .catalog__service{
+	float: none;
+    width: 100%;
+	margin-bottom: 5rem;
+    }
+}

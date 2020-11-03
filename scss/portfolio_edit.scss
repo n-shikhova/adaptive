@@ -1,0 +1,50 @@
+.portfolio{
+
+  &__form{
+
+  max-width: 790px;
+  margin: 3rem auto 0;
+  padding: 0 10px;
+  
+}
+  
+
+  &__file{
+    display: none;
+
+  }
+  &__label{
+    width: 100%;    
+    border-radius: 31px;
+    border: 1px solid #999;
+    background: url(p.png) top 50% right 20px no-repeat;
+    padding: 1.2rem 0 1.2rem 1.2rem;
+    display: block;
+    position: relative;
+    background-color: #e9faeb;
+    cursor: pointer;
+  }
+  &__button{
+   text-transform: uppercase;
+          width: 100%;
+          max-width: 780px;
+          padding: 1.2rem 0 1.2rem 1.2rem;
+          border-radius: 41px;
+          outline: none;
+          border: none!important;
+          margin-top: 55px;
+          color: #fff!important;
+          background: linear-gradient(0deg, #61ba6d 0%, #88cf2d 100%);
+          box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
+          cursor: pointer;
+          transition:  0.3s ease;
+          font-weight: bold;
+          text-align: center; 
+          
+            &:hover{
+                  background: linear-gradient(0deg, #61ba6d 0%, #61ba6d 100%);
+                  box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.15);
+                  transition:  0.3s ease;
+  }
+}
+}

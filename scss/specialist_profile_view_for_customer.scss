@@ -1,0 +1,242 @@
+.executor{
+  &__container{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  &__box{
+    margin-top: 5rem;
+    display: flex;
+    border-bottom: 5px solid #eee;
+    padding: 0 10px 5rem;
+  }
+  & p{
+  margin-right:10px;
+  }
+  &__state{
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 1px solid #999;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 130px;
+    height: 27px;
+    text-align: center;
+    padding-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    color: green;
+  }
+  &__info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 3rem;
+    span{
+      color: green;
+    }
+  }
+  &__user{
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  &__btn{
+    font-weight: bold;
+    width: 100%;
+    max-width: 292px;
+    display: block;
+    border: none;
+    cursor: pointer;
+    border-radius: 31px;
+    background: linear-gradient( 0deg, rgb(97,186,109) 0%, rgb(136,207,45) 100%);
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
+    outline: none;
+    text-transform: uppercase;
+    color: #fff;
+
+    padding: 22px 0 22px;
+    margin-top: 15px;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      background-image: url('../img-messendg/letter-icon.png');
+      width: 49px;
+      height: 37px;
+      left: 20px;
+      top: 14px;
+    }
+  }
+  
+  
+    &__izbran{
+    
+
+    width: 54px;
+    height: 44px;
+    margin-top: 15px;
+    position: relative;
+	background-color: white;
+    border: none;
+	cursor: pointer;
+    &::before{
+      content: "";
+      position: absolute;
+      background-image: url('h2.png');
+      background-size: cover;
+      width: 50px;
+      height: 44px;
+      left: 0;
+      top: 0;
+	  
+    }
+	&:hover::before {
+  content: "";
+  position: absolute;
+  background-image: url('h.png');
+  background-size: cover;
+  width: 50px;
+  height: 44px;
+  left: 0;
+  top: 0;
+  
+}
+  }
+  & img{
+    
+	height: 8.5rem;
+	border-radius: 50%;
+	border: 2px solid rgb(102 204 102);
+	} 
+}
+.history{
+ padding:0 10px;
+  &__title{
+  
+    padding-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  &__wrapper{
+    display: block;
+	position:relative;
+  }
+  &__block{
+    span{
+      color: green;
+    }
+	a{
+	width:90%;
+	margin-top: 4rem;
+	}
+  }
+  &__column{
+      width: 49%;
+      max-width: 580px;
+	  float: left;
+	  margin-top:3rem;
+      
+    
+  }
+  &__statistics{
+    font-weight: bold;
+  }
+  &__age{
+    display: inline-block;
+    margin-right: 1.1rem;
+  }
+  &__country{
+    display: inline-block;
+  }
+  &__my-services{
+    font-weight: bold;
+  }
+  &__item:not(:last-child){
+    margin-bottom: 17px;
+  }
+
+  &__education{
+      margin-top: 2rem;
+    width: 100%; 
+      float: left;
+	  margin-bottom: 1rem;
+  }
+  &__my-education{
+    font-weight: bold;
+  }
+  &__my-info{
+    font-size: 1.1rem;
+   
+  }
+ 
+  &__btn{
+    display: inline-block;
+  }
+  &__right{
+    margin-right: 5rem;
+  }
+  
+   &__otz {
+	float: left;
+    width: 100%;
+    margin-top: 3rem;
+	
+	& a{
+	margin: 1rem 2rem 1rem 0;
+}
+}
+}
+
+
+.submit, .submit_black{
+min-width:310px;
+
+}
+
+.footer {
+    float: left;
+width: 100%;}
+
+@media screen and (max-width: 960px) {
+	
+.history__column{
+  width: 100%;
+  float: none;
+}
+.history__column:nth-child(2) {
+margin-top:4rem;
+}
+
+
+.history__block	a{
+	width:100%
+	}
+	
+
+}
+
+@media screen and (max-width: 600px) {
+
+.executor__box {
+   display: block;
+    position: relative;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.executor__btn {
+    
+    max-width: 250px;
+
+}
+
+.executor__img img {
+	margin: 0 auto 10px;
+}
+.history__right {
+  margin-right: 0;
+}
+.executor__info {
+    
+    margin: 0 15px;
+}
+
+}

@@ -1,0 +1,215 @@
+
+
+.order{
+	&__container{
+		max-width: 1200px;
+		padding: 0 10px;
+		margin: 0 auto;
+	}
+	&__title{
+		text-align: left;
+	}
+	&__info{
+		display: flex;
+		align-items: center;
+			& img{
+	height: 7.5rem;
+	border-radius: 50%;
+	border: 2px solid rgb(102 204 102);
+	}
+	}
+
+	&__user-info{
+		margin-left: 3rem;
+	}
+	&__status{
+		font-size: 14px;
+		border: 1px solid #999;
+		border-radius: 10px;
+		text-align: center;
+		text-transform: uppercase;
+		color: green;
+		height: 27px;
+		padding-top: 5px;
+	}
+	&__name{
+		font-weight: bold;
+	}
+	&__location{
+
+	}
+	&__rate{
+		margin-left: auto;
+		span{
+			color: green;
+		}
+	}
+	&__list{
+		display: flex;
+		margin-top: 68px;
+	}
+	&__item{
+		text-transform: uppercase;
+		color: green;
+		padding-left: 30px;
+		&:nth-child(1){
+			margin-right: 25px;
+			position: relative;
+			&::before{
+				content: "";
+				position: absolute;
+				background-image: url('../img-index/check-icon.png');
+				width: 25px;
+				height: 25px;
+				left: 0px;
+				top: -3px;
+			}
+		}
+		&:nth-child(2){
+			margin-right: 52px;
+			position: relative;
+			&::before{
+				content: "";
+				position: absolute;
+				background-image: url('../img-index/check-icon.png');
+				background-size: cover;
+				width: 25px;
+				height: 25px;
+				left: 0px;
+				top: -3px;
+			}
+		}
+		&:nth-child(3){
+			margin-right: 56px;
+			position: relative;
+			&::before{
+				content: "";
+				position: absolute;
+				background-image: url('../img-index/radio-icon.png');
+				width: 25px;
+				height: 25px;
+				left: 0px;
+				top: -3px;
+			}
+		}
+		&:nth-child(4){
+			position: relative;
+			&::before{
+				content: "";
+				position: absolute;
+				background-image: url('../img-index/radio-icon.png');
+				width: 25px;
+				height: 25px;
+				left: 0;
+				top: -3px;
+			}
+		}
+	}
+}
+
+.statistics{
+	&__container{
+		max-width: 1170px;
+		margin: 0 auto;
+		padding: 0 10px;
+	}
+	&__wrapper{
+		margin-top: 90px;
+		padding-left: 113px;
+	}
+	&__title{
+		font-weight: bold;
+		FONT-SIZE: 1.2REM;
+	}
+	&__info{
+		position: relative;
+		&::before{
+			content: "";
+			position: absolute;
+			background-image: url('../img-index/flag-icon.png');
+			background-size: cover;
+			width: 5.5rem;
+            height: 5.1rem;
+			left: -6rem;
+			top: -1.7rem;
+		}
+	}
+	&__button{
+		
+		max-width: 390px!important;
+        margin: 4rem 2rem 4rem 0rem;
+
+	}
+	&__text{
+		    font-family: 'Montserrat', sans-serif;
+		font-size: 1.1rem;
+		
+	}
+	&__box{
+	background-color: rgb(245 245 245);
+    padding: 2rem 1rem 2rem 4rem;
+    margin-left: -85px;
+}
+	&__history{
+		margin-top: 5rem;
+	}
+	&__change{
+		position: relative;
+		font-weight: bold;
+		&::before{
+			content: "";
+			position: absolute;
+			background-image: url('../img-index/history-time.png');
+			background-size: cover;
+			width: 5rem;
+			height: 5rem;
+			left: -6rem;
+
+		}
+	}
+}
+@media screen and (max-width: 982px) {
+.statistics__button {
+  max-width: 390px !important;
+  margin: 1rem 0rem 1rem!important;
+}
+
+}
+
+@media screen and (max-width: 550px) {
+.statistics__wrapper {
+  
+    padding-left: 0;
+}
+.statistics__box{
+	
+    padding: 2rem;
+    margin-left: 0;
+}
+
+.statistics__change::before, .statistics__info::before {
+
+  background: none;
+  width: 0;
+    height: 0;
+  left: 0;
+}
+
+
+}
+
+
+@media screen and (max-width: 800px) {
+	
+	.order__user-info {
+    margin-left: 1rem;
+}
+
+  .order__list {
+    display: none;
+  }
+}
+
+
+
+}

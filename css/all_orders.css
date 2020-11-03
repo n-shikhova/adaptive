@@ -1,0 +1,248 @@
+.orders__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.orders__region {
+  max-width: 473px;
+  margin-right: 25px;
+}
+.orders__city {
+  width: 100%;
+  max-width: 652px;
+}
+.orders__service {
+  width: 100%;
+  max-width: 653px;
+  margin-right: 25px;
+}
+
+.orders__input{
+	display:inline-block;
+	width:33%!important;
+	
+}
+
+.orders__label {
+  margin: 0px 4rem 3rem 0rem;
+  display: inline-block;
+  vertical-align: top;
+  min-width: 240px;
+  max-width: 430px;
+}
+.orders__label label {
+  margin: 0 0 0 1rem;
+}
+.orders select {
+  border: 1px solid #999;
+  -webkit-appearance: none;
+  /* Chrome */
+  -moz-appearance: none;
+  /* Firefox */
+  appearance: none;
+  /* убираем дефолнтные стрелочки */
+  background: url(g.png) top 50% right 20px no-repeat;
+  background-color: #f5f7fa;
+}
+.orders .submit {
+  max-width: 472px !important;
+  margin-bottom: 4rem !important;
+  margin-top: 0!important;
+  }
+  
+  
+  .execution__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.execution__box {
+    display: block;
+    position: relative;
+    padding-top: 4rem;
+    padding-left: 15px;
+    border-bottom: 5px solid #eee;
+}
+.platnoe {
+	background-color:#e9faeb;
+}
+.execution__info {
+   float:left;
+}
+
+
+.execution__info:nth-child(1) {
+  margin-right: 128px;
+}
+
+
+
+.execution__list {
+  display: flex;
+}
+.execution__services {
+  color: green;
+}
+.execution__services:not(:last-child) {
+  margin-right: 2.5rem;
+}
+.execution__name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.execution__name span {
+  font-weight: 500;
+}
+.execution__img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 2.2rem;
+}
+.execution__description {
+  margin-top: 3rem;
+  margin-bottom: 2.2rem;
+  max-width: 765px;
+}
+.execution__user {
+  margin-bottom: 4rem;
+}
+.execution__user img {
+  height: 4rem;
+  border-radius: 50%;
+  border: 2px solid #6c6;
+}
+.execution__link {
+  color: green;
+}
+.execution__button {
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  display: block;
+  border: 1px solid #999;
+  padding: 20px 11px;
+  color: green;
+  width: 100%;
+  max-width: 262px;
+  outline: none;
+  cursor: pointer;
+  background-color: #fff;
+}
+.execution__button:hover {
+  background-color: #f7f7f7;
+}
+.execution__button-1 {
+  margin-bottom: 40px;
+}
+.execution__info:nth-child(2) a{
+	display:block!important;
+}
+
+  
+  
+  
+@media screen and (max-width: 1193px) {
+  .orders {
+    text-align: center;
+  }
+  .orders input[type=select], .orders input[type=submit] {
+    margin: 0px 0rem 3rem 0rem !important;
+    display: inline-block !important;
+    vertical-align: top !important;
+    min-width: 240px !important;
+    max-width: 430px !important;
+    text-align: center;
+  }
+  .orders__region {
+    max-width: 650px;
+    margin-right: 0;
+  }
+  .orders__city {
+    width: 100%;
+    max-width: 650px;
+  }
+  .orders__service {
+    width: 100%;
+    max-width: 650px;
+    margin-right: 0;
+  }
+  .orders .submit {
+    max-width: 650px !important;
+    margin-bottom: 4rem !important;
+	    margin-top: 0!important;
+  }
+}
+
+
+
+
+@media screen and (max-width: 1020px) {
+  .box, .executor__portfolio {
+    display: none;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .executor__portfolio {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+
+.executor__box {
+   display: block;
+    position: relative;
+    text-align: center;
+    margin-top: 3rem;
+}
+.executor__izbran{display: block;
+}
+
+.executor__img img {
+	margin: 0 auto 10px;
+}
+
+.executor__img{
+	margin-bottom: 20px;
+	
+	
+}
+
+
+.executor__info {
+    
+   margin-left: 0;
+}
+
+.executor__tale{
+text-align: left;
+
+}
+
+
+}
+
+
+@media screen and (max-width: 1114px) {
+	.execution__info:nth-child(2) {
+  margin: 1rem 0 5rem 10%;
+}
+.execution__info:nth-child(1) {
+    margin-right: 10px;
+}
+}
+
+@media screen and (max-width: 600px) {
+.execution__list {
+    display: block;
+}
+.execution__box {
+    
+    margin-top: 3rem;
+   
+}
+
+.execution__name {
+   
+    margin-top: 3rem;
+}
+}

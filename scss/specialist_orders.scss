@@ -1,0 +1,167 @@
+
+.orders{
+  &__container{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 2.7rem;
+  }
+  &__input{
+    max-width: 655px;    
+    outline: none;
+    
+  }
+  &__button{
+    
+    max-width: 290px !important;
+    max-height: 64px!important;
+    
+  }
+  &__check{
+    // display: block;
+  }
+  &__menu{
+    margin-top: 5rem;
+    display: block;
+    align-items: center;
+    position:relative;
+    background-color: #000;
+    padding: 5px;
+	
+  }
+  &__item{
+ display: inline-block;
+ vertical-align: top;
+  }
+  &__link{
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;    
+    padding: .5rem;
+    &:hover{
+      color: rgb(250 255 174);
+      transition: all .3s;
+    }
+  }
+    &__active{
+    color: rgb(250 255 174);
+}
+}
+.execution{
+  &__container{
+    max-width: 1200px;
+    margin: 0 auto;
+	padding: 0 10px;
+  }
+  &__box{
+    display: flex;
+    margin-top: 5rem;
+    border-bottom: 5px solid #eee;
+  }
+  &__info{
+    &:nth-child(1){
+      margin-right: 128px;
+    }
+
+
+    &:nth-child(2)a{
+	display:block!important;
+}
+  }
+  &__list{
+    display: flex;
+  }
+  &__services{
+    color: green;
+    &:not(:last-child){
+      margin-right: 2.5rem;
+    }
+  }
+  &__name{
+    font-size: 1.2rem;
+    font-weight: bold;
+    span{
+      font-weight: 500;
+    }
+  }
+  &__img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 2.2rem;
+  }
+  &__description{
+    margin-top: 3rem;
+    margin-bottom: 2.2rem;
+    max-width: 765px;
+  }
+  &__user{
+    margin-bottom: 4rem;
+	& img{
+	
+  height: 4rem;
+  border-radius: 50%;
+  border: 2px solid #6c6;
+}
+  }
+  &__link{
+    color: green;
+  }
+  &__button{
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    display: block;
+    border: 1px solid #999;
+    padding: 20px 11px;
+    color: green;
+    width: 100%;
+    max-width: 262px;
+    outline: none;
+    cursor: pointer;
+	background-color: #fff;
+	&:hover{
+	background-color: rgb(247 247 247);
+	}
+    &-1{
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.submit{
+margin-top: 0;
+}
+
+
+@media screen and (max-width: 1114px) {
+	.execution__info:nth-child(2) {
+  margin: 1rem 0 5rem 10%;
+}
+.execution__info:nth-child(1) {
+    margin-right: 10px;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+.execution__list {
+    display: block;
+}
+.execution__box {
+    
+    margin-top: 3rem;
+   
+}
+
+.execution__name {
+   
+    margin-top: 3rem;
+}
+}

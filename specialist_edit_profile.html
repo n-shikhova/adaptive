@@ -1,0 +1,197 @@
+<!-- Нужно, чтобы после нажатия на кнопку "Добавить еще услугу" появлялся еще такой же select список,
+чтобы пользователь мог выбрать не одну услугу, а несколько, которые он может предоставить.
+
+Аналогично с дипломом.
+
+Редактируют настройки на этой же страницы, т.е. если какие-то данные есть подтягивать их из базы в поля формы.
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Настройка профиля</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/header_spesialist.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/specialist_edit_profile.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+</head>
+<body>
+	<header class="header2">
+		<div class="header2__container">
+			<div class="header2__wrapper">
+				<div class="logo">YOUR<br> <span>Services</span></div>
+				<nav class="site-navigation2">
+					<ul class="site-navigation2__list">
+						<li class="site-navigation2__item">
+							<a class="site-navigation2__link">Сообщения</a>
+						</li>
+						<li class="site-navigation2__item">
+							<a class="site-navigation2__link">Мои заказы</a>
+						</li>
+						<li class="site-navigation2__item">
+							<a class="site-navigation2__link">Разместить объявление</a>
+						</li>
+					</ul>
+				</nav>
+
+						<nav class="header2-authorization">
+				
+								
+
+  <ul class="topmenu2">
+    <li><button class="logout2">Выход</button></li>
+   
+    <li><button class="specialist-info2">	Исполнитель: ИВАН ИВАНОВ	 </button></a>
+      <ul class="submenu2">
+	 <li><a class="submenu2__а">Личный кабинет</a></li>
+	 <li><a class="submenu2__а ">Создать заказ</a></li>
+	 <li><a class="submenu2__а ">Сообщения</a></li>
+	 <li><a class="submenu2__а ">Мои заказы</a></li>
+	 <li><a class="submenu2__а ">Настройки</a></li>
+	 <li><a class="submenu2__а ">Баланс</a></li>
+	 <li><a class="submenu2__а ">Пополнить счет</a></li>
+	 <li><a class="submenu2__а ">Вывести деньги</a></li>
+	 <li><a class="submenu2__а ">Арбитраж</a></li>
+	 <li><a class="submenu2__а ">Войти как заказчик</a></li>	 
+	 <li><a class="submenu2__а ">Выход</a></li>
+      </ul>
+    </li>
+    
+  </ul>
+</nav>
+		
+				
+				
+				
+				
+				
+							<div class="menu2 min-900">	
+				
+				
+			   <input class="menu2__input" type="checkbox" id="toggle">
+			
+			<label class="menu2__label" for="toggle">
+&#9776;
+
+            </label>
+
+<nav id="menu-mobil" class="menu2__nav" style="z-index: 100;">
+  <ul class="menu2__ul">
+	 <li class="menu2__li"><a class="menu2__link">Личный кабинет</a></li>
+	 <li class="menu2__li"><a class="menu2__link">Создать заказ</a></li>
+	 <li class="menu2__li"><a class="menu2__link">Сообщения</a></li>
+	 <li class="menu2__li"><a class="menu2__link">Мои заказы</a></li>
+	 <li class="menu2__li"><a class="menu2__link">Настройки</a></li>
+	 <li class="menu2__li"><a class="menu2__link">Баланс</a></li>
+	 <li class="menu2__li"><a class="menu2__link">Пополнить счет</a></li>
+	 <li class="menu2__li"><a class="menu2__link">Вывести деньги</a></li>
+	 <li class="menu2__li"><a class="menu2__link">Арбитраж</a></li>
+	 <li class="menu2__li"><a class="menu2__link">Войти как исполнитель</a></li>	 
+	 <li class="menu2__li"><a class="menu2__link">Выход</a></li>
+
+
+
+
+  </ul>
+</nav>	
+				
+				
+		</div>	
+				
+				
+				
+				
+				
+			</div>
+		</div>
+	</header>
+	<section class="settings" style="padding:0 15px; max-width:1200px; text-align:center;margin: 0 auto;">
+		<h1 class="settings__title">Специальные настройки профиля, обязательные только для исполнителя</h1>
+		<p class="settings__text">Для того чтобы отображаться в списке как исполнитель и выполнять заказы, заполните специальные поля в форме ниже.</p>
+		<p class="settings__text">Исполнитель может взять одновременно в работу только 3 заказа. Для того чтобы иметь неограниченный доступ к заказам, Вы можете подключить Бизнес-аккаунт внизу страницы.</p>
+	</section>
+	<section class="form">
+		<div class="form__container">
+			<form action="#">
+				<div class="form__wrapper">
+					<p class="form__you-services">Ваши услуги:</p>
+					
+					
+										<select class="form__select">
+						<option disabled>Выбор услуги</option>
+						<option value="Аренда">Аренда</option>
+						<option value="Ремонт и строительство">Ремонт и строительство</option>
+						<option value="Ремонт и установка техники">Ремонт и установка техники</option>
+						<option value="Ремонт авто">Ремонт авто</option>
+						<option value="Репетиторы и обучение">Репетиторы и обучение</option>
+						<option value="Красота">Красота</option>
+						<option value="Перевозки и курьеры">Перевозки и курьеры</option>
+						<option value="Хозяйство и уборка">Хозяйство и уборка</option>
+						<option value="Компьютеры и IT">Компьютеры и IT</option>
+						<option value="Дизайнеры">Дизайнеры</option>
+						<option value="Юристы">Юристы</option>
+						<option value="Тренеры">Тренеры</option>
+					</select>
+					
+					
+					<input class="form__file"  id="file">
+					<label class="form__label" for="file">Добавить ещё услугу</label>
+					<p class="form__about-me">Обо мне:</p>
+					<textarea name="" id="" class="form__description" placeholder="Краткий рассказ о Ваших навыках и услугах, расценках:"></textarea>
+					<p class="form__education">Информация об образовании:</p>
+				</div>
+				<div class="form__box">
+						<select class="form__select" name="" id="">
+							<option value="" selected>Бакалавр</option>
+						</select>
+						<input class="form__input" type="text" placeholder="Учебное заведение:">
+						<input class="form__input" type="text" placeholder="Специальность">
+						<input class="form__input" type="date" placeholder="Год окончания">
+				</div>
+				<input class="form__file" id="file-2">
+				<label class="form__label form__label2" for="file-2">Добавить ещё диплом</label>
+				
+				<input class="mail__check" type="checkbox" style="margin-top:3rem;"> <label>Подключить бизнес-аккаунт (неограниченное количество активных заказов, комиссия 10%)</label>
+				
+				<button class="submit">Сохранить изменения</button>
+				<!-- Переход: личный кабинет specialist_profile.html -->
+			</form>	
+		</div>
+	</section>
+	<section class="edit">
+		<a href="general_edit_profile.html" class="edit__button">Редактировать общие настройки профиля</a>
+		<button class="edit__remove">Удалить меня, как исполнителя</button>
+	</section>
+	<footer class="footer">
+			<div class="container__footer">
+				<div class="footer__wrapper">
+					<div class="footer__column">
+						<div class="footer__logo">YOUR<br> <span>Services</span></div>
+						<div class="footer__copyright">&copy; 2020 YOUR Services. Все права защищены</div>
+					</div>
+					<ul class="footer__column">
+						<li class="footer__item">
+							<a href="#" class="footer__link">Политика конфиденциальности</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Пользовательское соглашение</a>
+						</li>
+					</ul>
+					<div class="footer__column">
+						<div>
+						    <a href="#" class="footer__button">Написать нам</a>
+					     </div>
+						<a href="#" class="footer__mail">info@your-services.ru</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+</body>
+</html>

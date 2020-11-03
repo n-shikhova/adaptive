@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Регистрация</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/header_out.css">	
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/reg_create_order.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="plugin/css/plugin.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container__header">
+			<div class="header__wrapper">
+				<div class="header-logo">YOUR<br><span>Services</span></div>
+				<div class="header__burger">
+					<span></span>
+				</div>
+				<nav class="header-navigation">
+					<ul class="header-navigation__list">
+						<li class="header-navigation__item">
+							<a href="#" class="header-navigation__link">Создать заказ</a>
+						</li>
+						<li class="header-navigation__item">
+							<a href="#" class="header-navigation__link">Все заказы</a>
+							</li>
+						<li class="header-navigation__item">
+							<a href="#" class="header-navigation__link">Стать исполнителем</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header-authorization">
+					<button class="sign-in">Вход</button>
+					<button class="sign-up">Регистрация</button>
+				</div>
+			</div>
+		</div>
+		
+		<div class="green"></div>
+		
+		
+				<div class="menu2 min-900">	
+				
+				
+			   <input class="menu2__input" type="checkbox" id="toggle">
+			
+			<label class="menu2__label" for="toggle">
+&#9776;
+
+            </label>
+
+<nav id="menu-mobil" class="menu2__nav" style="z-index: 100;">
+  <ul class="menu2__ul">
+	 <li class="menu2__li"><a class="menu2__link">Создать заказ</a></li>
+	 <li class="menu2__li"><a class="menu2__link">Все заказы</a></li>
+	 <li class="menu2__li"><a class="menu2__link">Стать исполнителем</a></li>
+	 <li class="menu2__li"><a class="menu2__link">Вход</a></li>
+	 <li class="menu2__li"><a class="menu2__link">Регистрация</a></li>
+
+
+
+
+  </ul>
+</nav>	
+				
+				
+		</div>	
+		
+		
+	</header>
+	<section class="registration">
+		<div class="registration__container">
+			<h1 class="registration__title">Быстрая регистрация</h1>
+			<ul class="registration__list">
+				<li class="registration__item">
+					<a class="registration__link" href="#">ВКонтакте</a>
+				</li>
+				<li class="registration__item">
+					<a class="registration__link" href="#">Facebook</a>
+				</li>
+				<li class="registration__item">
+					<a class="registration__link registration__od" href="#">Одноклассники</a>
+				</li>
+				<li class="registration__item">
+					<a class="registration__link" href="#">Google</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="mail">
+		<div class="mail__container">
+			<h2 class="mail__title">Регистрация через почту</h2>
+			<form action="#" class="mail__form">
+				<div class="mail__flex">
+					<input class="mail__input" type="text" placeholder="Имя">
+					<input class="mail__input" type="text" placeholder="Фамилия">
+					<input class="mail__input" type="text" placeholder="e-mail">
+					<input class="mail__input" type="text" placeholder="Телефон">
+					<input class="mail__input" type="text" placeholder="Страна:">
+					<input class="mail__input" type="text" placeholder="Город:">
+					<input class="mail__input" type="text" placeholder="Пароль:">
+					<input class="mail__input" type="date" placeholder="Дата Рождения:" data-toggle="tooltip" title="" data-original-title="Дата Рождения">
+				
+					<div>
+					<input class="mail__check" type="checkbox">
+					<label>Зарегистрировать меня, только как заказчика</label>
+					<br>
+					<input class="mail__check" type="checkbox">
+					<label>Зарегистрировать меня, как исполнителя и заказчика</label>
+					<br>
+					<input class="mail__check" type="checkbox">
+					<label>Получать уведомления о заказах на электронную почту</label>
+					</div>
+				</div>
+				<div class="mail__flex-2">
+					<p class="mail__create">Создать новый заказ</p>
+					<select class="mail__choose" name="" id="">
+						<option>Выбор услуги</option>
+					</select>
+					<input class="mail__order" type="text" placeholder="Название заказа">
+					<textarea class="mail__description" name="" id="" placeholder="Описание заказа"></textarea>
+					<input class="mail__cost" type="text" placeholder="Стоимость заказа">
+					<input class="mail__day" type="text" placeholder="Количество дней на исполнение:">
+					<button class="submit" type="submit">Зарегистрироваться и создать заказ</button>
+					<!-- Переход: order_view_for_customer.html -->
+					
+					
+				</div>
+			</form>
+		</div>
+	</section>
+	<footer class="footer">
+			<div class="container__footer">
+				<div class="footer__wrapper">
+					<div class="footer__column">
+						<div class="footer__logo">YOUR<br> <span>Services</span></div>
+						<div class="footer__copyright">&copy; 2020 YOUR Services. Все права защищены</div>
+					</div>
+					<ul class="footer__column">
+						<li class="footer__item">
+							<a href="#" class="footer__link">Политика конфиденциальности</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Пользовательское соглашение</a>
+						</li>
+					</ul>
+					<div class="footer__column">
+						<div>
+						    <a href="#" class="footer__button">Написать нам</a>
+					     </div>
+						<a href="#" class="footer__mail">info@your-services.ru</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+					
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+	<script>
+	$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+</html>

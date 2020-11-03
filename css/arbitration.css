@@ -1,0 +1,62 @@
+.application__container {
+  max-width: 595px;
+  margin: 0 auto;
+}
+.application__title {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 3rem;
+  margin-bottom: 5rem;
+}
+.application__form {
+  padding: 0 10px;
+}
+.application__select {
+  border: 1px solid #999;
+  -webkit-appearance: none;
+  /* Chrome */
+  -moz-appearance: none;
+  /* Firefox */
+  appearance: none;
+  /* убираем дефолнтные стрелочки */
+  background: url(g.png) top 50% right 20px no-repeat;
+  background-color: #f5f7fa;
+}
+.application__description {
+  resize: none;
+  outline: none;
+  height: 8rem;
+}
+.application__button {
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 580px;
+  padding: 1.2rem 0 1.2rem 1.2rem;
+  border-radius: 41px;
+  outline: none;
+  border: none!important;  
+  color: #fff !important;
+  background: linear-gradient(0deg, #61ba6d 0%, #88cf2d 100%);
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: bold;
+  text-align: center;
+}
+.application__button:hover {
+  background: linear-gradient(0deg, #61ba6d 0%, #61ba6d 100%);
+  box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+}
+.application input, .application select, .application textarea {
+  width: 100%;
+  max-width: 780px;
+  margin-bottom: 2.2rem !important;
+  padding: 1.2rem 0 1.2rem 1.2rem;
+  border-radius: 41px;
+  outline: none;
+  border: 1px solid #999;
+  background-color: #f5f7fa;
+  color: #505050;
+}

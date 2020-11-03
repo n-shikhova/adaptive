@@ -1,0 +1,158 @@
+.orders__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.orders__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 2.7rem;
+}
+.orders__input {
+  max-width: 655px;
+  outline: none;
+}
+.orders__button {
+  max-width: 290px !important;
+  max-height: 64px !important;
+}
+.orders__menu {
+  margin-top: 5rem;
+  display: block;
+  align-items: center;
+  position: relative;
+  background-color: #000;
+  padding: 5px;
+}
+.orders__item {
+  display: inline-block;
+  vertical-align: top;
+}
+.orders__link {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0.5rem;
+}
+.orders__link:hover {
+  color: #faffae;
+  transition: all 0.3s;
+}
+.orders__active {
+  color: #faffae;
+}
+.execution__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.execution__box {
+  display: block;
+  position:relative;
+  margin-top: 5rem;
+  border-bottom: 5px solid #eee;
+}
+
+.execution__info {
+   float:left;
+}
+
+
+.execution__info:nth-child(1) {
+  margin-right: 128px;
+}
+
+
+
+.execution__list {
+  display: flex;
+}
+.execution__services {
+  color: green;
+}
+.execution__services:not(:last-child) {
+  margin-right: 2.5rem;
+}
+.execution__name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.execution__name span {
+  font-weight: 500;
+}
+.execution__img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 2.2rem;
+}
+.execution__description {
+  margin-top: 3rem;
+  margin-bottom: 2.2rem;
+  max-width: 765px;
+}
+.execution__user {
+  margin-bottom: 4rem;
+}
+.execution__user img {
+  height: 4rem;
+  border-radius: 50%;
+  border: 2px solid #6c6;
+}
+.execution__link {
+  color: green;
+}
+.execution__button {
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  display: block;
+  border: 1px solid #999;
+  padding: 20px 11px;
+  color: green;
+  width: 100%;
+  max-width: 262px;
+  outline: none;
+  cursor: pointer;
+  background-color: #fff;
+      text-align: center;
+}
+.execution__button:hover {
+  background-color: #f7f7f7;
+}
+.execution__button-1 {
+  margin-bottom: 40px;
+}
+.execution__info:nth-child(2) a{
+	display:block!important;
+}
+
+.submit {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 1114px) {
+	.execution__info:nth-child(2) {
+  margin: 1rem 0 5rem 10%;
+}
+.execution__info:nth-child(1) {
+    margin-right: 10px;
+}
+}
+
+@media screen and (max-width: 600px) {
+.execution__list {
+    display: block;
+}
+.execution__box {
+    
+    margin-top: 3rem;
+   
+}
+
+.execution__name {
+   
+    margin-top: 3rem;
+}
+}

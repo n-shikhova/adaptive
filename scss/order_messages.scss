@@ -1,0 +1,84 @@
+
+.order{
+  &__container{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  &__user{
+    display: flex;
+    align-items: center;
+    margin: 4rem 0;
+	padding: 0 15px;
+  }
+  &__img{
+    margin-right: 3rem;
+	height: 7rem;
+	border-radius: 50%;
+	border: 2px solid rgb(102 204 102);
+	
+  }
+  &__nickname{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-right: 3rem;
+  }
+  &__state{
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: green;
+    border: 1px solid #999;
+    border-radius: 10px;       
+    text-align: center;
+    padding: 0.5rem 1rem;
+  }
+  &__messages{
+    margin-top: 1.2rem;
+    background-color: #eee;
+    padding: 1px 6rem 2rem 2rem;
+  }
+  &__time{
+    display: inline-block;
+    margin-right: 1.1rem;
+    color: green;
+  }
+  &__name{
+    display: inline-block;
+    color: green;
+  }
+ 
+  &__answer{
+    
+    width: 100%;
+    padding: 0 2rem 1rem 6rem;
+  }
+  &__description{
+    font-weight: bold;
+    color: #000;
+    width: 100%;
+    max-width: 1170px;
+    height: 210px;
+    resize: none;
+    border-radius: 10px;
+    background-color: #e9faeb;
+    outline: none;
+    padding: 23px 0 0 15px;
+	border-color:rgb(224 224 224);
+  }
+  &__button{
+    width: 100%;
+    max-width: 487px;
+    text-transform: uppercase;
+    background: linear-gradient( 0deg, rgb(97,186,109) 0%, rgb(136,207,45) 100%);
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 31px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 22px 0;
+    margin-top: 41px;
+    margin-left: auto;
+    display: block;
+  }
+}

@@ -1,0 +1,126 @@
+.message__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.message__title{
+  margin-bottom:4rem;
+  }
+.message__box {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+.message__box:nth-child(even) {
+  background-color: #eeeeee;
+}
+.message__box:nth-child(odd) {
+  background-color: #fff;
+}
+.message__photo {
+  float: left;
+  width: 15%;  
+  margin-left: 4rem;
+
+}
+.message__photo img {
+  
+  height: 7rem;
+  border-radius: 50%;
+  border: 2px solid #6c6;
+}
+.message__online {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: green;
+  border: 1px solid #999;
+  border-radius: 10px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+.message__info {
+  margin-left: 3rem;
+  float: left;
+  width: 40%;
+}
+.message__name {
+  font-size: 20px;
+  font-weight: bold;
+}
+.message__text {
+  font-size: 16px;
+}
+
+.message__letter {
+  margin-right: 37px;
+  margin-top: -60px;
+}
+
+.message__letter img{
+	
+	width:3.5rem;
+	
+}
+
+.message__col {
+  margin-top: -60px;
+
+}
+.message__all {
+  font-size: 16px;
+}
+.message__all span {
+  color: green;
+}
+.message__last {
+  font-size: 16px;
+}
+.message__last span {
+  color: green;
+}
+
+@media screen and (max-width: 900px) {
+.message__photo {
+    width: 30%;  
+	
+
+}
+.message__info { 
+  margin-bottom: 1rem;
+  width: 69%;
+  
+}
+
+
+.message__letter, .message__all, .message__last{display: none;}
+
+
+
+
+}
+
+@media screen and (max-width: 650px) {
+.message__photo {
+    width: 100%;  
+	float: none;
+
+}
+.message__info { 
+  margin-bottom: 4rem;
+  width: 100%;
+  float: none;
+}
+
+.message__box {
+  
+  display: block;
+  align-items: center;
+}
+
+.message__letter, .message__all, .message__last{display: none;}
+
+
+
+
+}

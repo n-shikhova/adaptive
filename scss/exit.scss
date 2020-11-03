@@ -1,0 +1,120 @@
+
+				
+
+.form{
+    padding: 0 10px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	width: 100%;
+	position: relative;
+  &__authorization{
+	width: 100%;
+	position: relative;
+	min-height: 52vh;
+	padding: 16vh 10px 0;
+}
+  &__submit{
+    font-weight: bold;
+    margin-top: 230px;
+    width: 100%;
+    max-width: 490px;
+    background: linear-gradient( 0deg, rgb(97,186,109) 0%, rgb(136,207,45) 100%);
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 31px;
+    padding: 22px 0 25px;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+	display: block;
+  }
+  &__submit_black{
+    font-weight: bold;
+    margin-top: 50px;
+    width: 100%;
+    max-width: 490px;
+    border-radius: 31px;
+    padding: 22px 0 25px;
+    box-shadow: 0px 5px 16.6px 3.4px rgba(99, 187, 106, 0.35);
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+	display: block;
+  }
+}
+
+.footer{
+	  margin-top: 6rem;
+      background: linear-gradient(0deg, #666666 0%, black 100%);
+	&__wrapper{
+		  display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-top: 2rem;
+          padding-bottom: 3rem;
+	}
+	&__column{
+		padding: 1rem;
+	}
+	&__logo{
+		  font-family: 'Myriad Bold';
+          font-weight: bold;
+          font-size: 2.6rem;
+          color: #fff;
+          line-height: 1.7rem;
+		span{
+			font-weight: 400;
+			color: #6cb970;
+		}
+	}
+	&__copyright{
+		  font-size: 1.2rem;
+          font-weight: bold;
+          color: #fff;
+          margin-top: 2rem;
+	}
+	&__item{
+		&:nth-child(1){
+			margin-top: 2rem;
+		}
+		&:nth-child(2){
+			padding-top: 4rem;
+		}
+	}
+	&__link{
+		color: #fff;
+	}
+	&__button{
+		  font-weight: bold;
+          text-transform: uppercase;
+          color: #fff;
+          background: linear-gradient(0deg, #b1b1b1 0%, #8d8d8d 100%);
+          padding: 1.2rem 2.2rem;
+          border-radius: 40px;
+          text-align: center;
+
+		&:hover{
+			box-shadow: 0px 5px 16.6px 3.4px rgba(99,187,106,0.35);
+		}
+	}
+	&__mail{
+	      margin-top: 3rem;
+          color: #fff;
+	}
+}
+		
+				
+				
+
+
+				
+
+
+
+
+

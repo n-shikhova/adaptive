@@ -1,0 +1,61 @@
+
+
+.container__form{
+	max-width: 790px;
+	margin: 0 auto;
+}
+
+.portfolio{
+  &__container{
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  &__link{
+    max-width: 490px;
+    margin: 0 auto;
+  }
+  
+  &__box{
+  
+  margin-left:10px;
+  margin-right:10px;
+  
+    &:nth-child(-n+3){
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	margin-top:6rem;
+	padding: 0 10px;
+  }
+  &__text{
+    background-color: white;
+    width: 100%;
+    max-width: 375px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 2;
+    margin-top: -66px;
+	padding: 1rem;
+    
+  }
+  &__info{
+    
+    text-transform: uppercase;
+    max-width: 216px;
+  }
+  &__column{
+    max-width: 375px;
+  }
+
+  &__description{
+    max-width: 295px;
+  }
+
+}

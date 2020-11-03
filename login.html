@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Вход</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/header_out.css">	
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container__header">
+			<div class="header__wrapper">
+				<div class="header-logo">YOUR<br><span>Services</span></div>
+				<div class="header__burger">
+					<span></span>
+				</div>
+				<nav class="header-navigation">
+					<ul class="header-navigation__list">
+						<li class="header-navigation__item">
+							<a href="#" class="header-navigation__link">Создать заказ</a>
+						</li>
+						<li class="header-navigation__item">
+							<a href="#" class="header-navigation__link">Все заказы</a>
+							</li>
+						<li class="header-navigation__item">
+							<a href="#" class="header-navigation__link">Стать исполнителем</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header-authorization">
+					<button class="sign-in">Вход</button>
+					<button class="sign-up">Регистрация</button>
+				</div>
+			</div>
+		</div>
+		
+		<div class="green"></div>
+		
+		
+				<div class="menu2 min-900">	
+				
+				
+			   <input class="menu2__input" type="checkbox" id="toggle">
+			
+			<label class="menu2__label" for="toggle">
+&#9776;
+
+            </label>
+
+<nav id="menu-mobil" class="menu2__nav" style="z-index: 100;">
+  <ul class="menu2__ul">
+	 <li class="menu2__li"><a class="menu2__link">Создать заказ</a></li>
+	 <li class="menu2__li"><a class="menu2__link">Все заказы</a></li>
+	 <li class="menu2__li"><a class="menu2__link">Стать исполнителем</a></li>
+	 <li class="menu2__li"><a class="menu2__link">Вход</a></li>
+	 <li class="menu2__li"><a class="menu2__link">Регистрация</a></li>
+
+
+
+
+  </ul>
+</nav>	
+				
+				
+		</div>	
+		
+		
+	</header>
+	<section class="authorization">
+		<div class="authorization__container">
+			<h1 class="authorization__title">Быстрый вход</h1>
+			<div class="authorization__list">
+				<div class="authorization__item">
+					<a class="authorization__link" href="#">ВКонтакте</a>
+				</div>
+				<div class="authorization__item">
+					<a class="authorization__link" href="#">Facebook</a>
+				</div>
+				<div class="authorization__item">
+					<a class="authorization__link authorization__od" href="#">Одноклассники</a>
+				</div>
+				<div class="authorization__item">
+					<a class="authorization__link" href="#">Google</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="login">
+		<div class="login__container">
+		
+			<h2 class="login__title">Войти:</h2>
+			<form action="#" class="login__form">
+				<input class="login__input" type="text" placeholder="e-mail">
+				<input class="login__input" type="text" placeholder="Пароль:">
+				<div>
+					<input type="checkbox">
+					<label class="login__label">Запомнить меня</label>
+				</div>
+				<button class="submit" type="submit">Войти как заказчик</button>
+				
+				<!--Переход: customer_profile.html-->
+				<button class="submit_black" type="submit">Войти как исполнитель</button>
+				
+				<!--Переход: specialist_profile.html-->
+			</form>
+			<ul class="login__list">
+				<li class="login__item">
+					<a class="login__link" href="#">Восстановить пароль</a><!-- Не знаю как делается-->
+				</li>
+				<li class="login__item">
+					<a class="login__link" href="registration.html">Регистрация</a>
+				</li>
+			</ul>
+
+		</div>
+	</section>
+	<footer class="footer">
+			<div class="container__footer">
+				<div class="footer__wrapper">
+					<div class="footer__column">
+						<div class="footer__logo">YOUR<br> <span>Services</span></div>
+						<div class="footer__copyright">&copy; 2020 YOUR Services. Все права защищены</div>
+					</div>
+					<ul class="footer__column">
+						<li class="footer__item">
+							<a href="#" class="footer__link">Политика конфиденциальности</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Пользовательское соглашение</a>
+						</li>
+					</ul>
+					<div class="footer__column">
+						<div>
+						    <a href="#" class="footer__button">Написать нам</a>
+					     </div>
+						<a href="#" class="footer__mail">info@your-services.ru</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+label{
+  text-align: right;
+}
+
+.money__container{
+  max-width: 590px;
+  margin: 0 auto;
+}
+
+.money{
+
+
+  &__way{
+
+    margin-bottom: 72px;
+  }
+  &__label{
+    font-size: 1.3rem;
+    padding-left: 1.8rem;
+  }
+  &__card{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    &-column{
+      color: #4b9f56;
+    }
+    &-comission{
+      font-weight: 400;
+	  color: rgb(109 109 109);
+    }
+  }
+  &__submit{
+     text-transform: uppercase;
+          width: 100%;
+          max-width: 590px;
+          padding: 1.2rem 0 1.2rem 1.2rem;
+          border-radius: 41px;
+          outline: none;
+          border: none!important;
+          margin-top: 55px;
+          color: #fff!important;
+          background: linear-gradient(0deg, #61ba6d 0%, #88cf2d 100%);
+          box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
+          cursor: pointer;
+          transition:  0.3s ease;
+          font-weight: bold;
+          text-align: center; 
+          
+            &:hover{
+                  background: linear-gradient(0deg, #61ba6d 0%, #61ba6d 100%);
+                  box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.15);
+                  transition:  0.3s ease;
+            }
+  }
+}

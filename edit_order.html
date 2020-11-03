@@ -1,0 +1,169 @@
+<!-- Вместо placeholder=" " из базы данных подтягиваются данные по этому заказу	-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Редактирование заказа</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/header_customer.css">	
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="./css/add_order.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	
+</head>
+<body>
+<header class="header">
+		<div class="header__container">
+			<div class="header__wrapper">
+				<div class="logo">YOUR<br> <span>Services</span></div>
+				<nav class="site-navigation">
+					<ul class="site-navigation__list">
+						<li class="site-navigation__item">
+							<a href="messages.html" class="site-navigation__link">Сообщения</a>
+						</li>
+						<li class="site-navigation__item">
+							<a href="customer_orders.html" class="site-navigation__link">Мои заказы</a> 
+						</li>
+						<li class="site-navigation__item active">
+							<a href="add_order.html" class="site-navigation__link">Новый заказ</a>
+						</li>
+					</ul>
+				</nav>
+						<nav class="header-authorization three">				
+								
+
+  <ul class="topmenu">
+    <li><a href="exit.html" class="logout">Выход</a></li>
+   
+    <li><button class="specialist-info">	Заказчик: ИВАН ИВАНОВ	 </button></a>
+      <ul class="submenu">
+	 <li><a href="customer_profile.html" class="submenu__а">Личный кабинет</a></li>
+	 <li><a href="add_order.html" class="submenu__а">Создать заказ</a></li>
+	 <li><a href="customer_orders.html" class="submenu__а">Мои заказы</a></li>
+	 <li><a href="catalog.html" class="submenu__а">Каталог услуг</a></li>
+	 <li><a href="all_orders.html" class="submenu__а">Все заказы</a></li>
+	 <li><a href="messages.html" class="submenu__а">Сообщения</a></li>
+	 <!-- 
+	 <li><a href="history_money.html" class="submenu__а">Баланс</a></li>
+	 <li><a href="deposit_money.html" class="submenu__а">Пополнить счет</a></li>
+	 <li><a href="payout_money.html" class="submenu__а">Вывести деньги</a></li>-->
+	 <li><a href="arbitration.html" class="submenu__а">Арбитраж</a></li>
+	 <!-- Только, если зарегистрирован как исполнитель-->
+	 <li><a href="spesialist_profile.html" class="submenu__а">Войти как исполнитель</a></li>	
+	 <!-- Если не зарегистрирован, как исполнитель
+	 <li><a href="spesialist_edit_profile.html" class="submenu__а">Стать исполнителем</a></li>	-->
+     <li><a href="general_edit_profile.html" class="submenu__а">Настройки</a></li>	 
+	 <li><a href="exit.html" class="submenu__а">Выход</a></li>
+	 
+	 
+	 
+      </ul>
+    </li>
+    
+  </ul>
+</nav>	
+			<div class="menu2 min-900">	
+				
+				
+			   <input class="menu2__input" type="checkbox" id="toggle">
+			
+			<label class="menu2__label" for="toggle">
+&#9776;
+
+            </label>
+
+<nav id="menu-mobil" class="menu2__nav" style="z-index: 100;">
+  <ul class="menu2__ul">
+	 <li class="menu2__li"><a href="customer_profile.html" class="menu2__link">Личный кабинет</a></li>
+	 <li class="menu2__li"><a href="add_order.html" class="menu2__link">Создать заказ</a></li>
+	 <li class="menu2__li"><a href="customer_orders.html" class="menu2__link">Мои заказы</a></li>
+	 <li class="menu2__li"><a href="catalog.html" class="menu2__link">Каталог услуг</a></li>
+	 <li class="menu2__li"><a href="all_orders.html" class="menu2__link">Все заказы</a></li>
+	 <li class="menu2__li"><a href="messages.html" class="menu2__link">Сообщения</a></li>
+	 <!-- 
+	 <li class="menu2__li"><a href="history_money.html" class="menu2__link">Баланс</a></li>
+	 <li class="menu2__li"><a href="deposit_money.html" class="menu2__link">Пополнить счет</a></li>
+	 <li class="menu2__li"><a href="payout_money.html" class="menu2__link">Вывести деньги</a></li>-->
+	 <li class="menu2__li"><a href="arbitration.html" class="menu2__link">Арбитраж</a></li>
+	 <!-- Только, если зарегистрирован как исполнитель-->
+	 <li class="menu2__li"><a href="spesialist_profile.html" class="menu2__link">Войти как исполнитель</a></li>	
+	 <!-- Если не зарегистрирован, как исполнитель
+	 <li class="menu2__li"><a href="spesialist_edit_profile.html" class="menu2__link">Стать исполнителем</a></li>	-->
+     <li class="menu2__li"><a href="general_edit_profile.html" class="menu2__link">Настройки</a></li>	 
+	 <li class="menu2__li"><a href="exit.html" class="menu2__link">Выход</a></li>
+  </ul>
+</nav>			
+		</div>	
+			</div>
+		</div>
+		
+		
+		
+	</header>
+
+	<section class="form">
+		<div class="container">
+			<h1 class="form__title">Редактировать заказ</h1>
+			<div class="container__form">
+				<form action="#" class="feedback">
+					<select class="form__select">
+						<option disabled>Выбор услуги</option>
+						<option value="Аренда">Аренда</option>
+						<option value="Ремонт и строительство">Ремонт и строительство</option>
+						<option value="Ремонт и установка техники">Ремонт и установка техники</option>
+						<option value="Ремонт авто">Ремонт авто</option>
+						<option value="Репетиторы и обучение">Репетиторы и обучение</option>
+						<option value="Красота">Красота</option>
+						<option value="Перевозки и курьеры">Перевозки и курьеры</option>
+						<option value="Хозяйство и уборка">Хозяйство и уборка</option>
+						<option value="Компьютеры и IT">Компьютеры и IT</option>
+						<option value="Дизайнеры">Дизайнеры</option>
+						<option value="Юристы">Юристы</option>
+						<option value="Тренеры">Тренеры</option>
+					</select>
+					<input class="form__order" type="text" name="order" placeholder="Название заказа:">
+					<textarea class="form__info" placeholder="Описание заказа:"></textarea>
+					<input class="form__cost" type="text" name="" placeholder="Стоимость заказа*">
+					<p>* можете оставить это поле пустым, тогда исполнители сами предложат свою цену.</p>
+					<input class="form__day" type="text" name="day" placeholder="Количество дней на исполнение:">
+					<input type="checkbox" name="form__check" class="form__check">
+					<label for="form__check">Закрепить вверху списка заказов на 24 часа**</label>
+
+					
+					<input class="form__submit" type="submit" value="Редактировать заказ">
+					
+					<!--Переход: order_view_for_customer.html-->
+
+				</form>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+			<div class="container__footer">
+				<div class="footer__wrapper">
+					<div class="footer__column">
+						<div class="footer__logo">YOUR<br> <span>Services</span></div>
+						<div class="footer__copyright">&copy; 2020 YOUR Services. Все права защищены</div>
+					</div>
+					<ul class="footer__column">
+						<li class="footer__item">
+							<a href="#" class="footer__link">Политика конфиденциальности</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Пользовательское соглашение</a>
+						</li>
+					</ul>
+					<div class="footer__column">
+						<div>
+						    <a href="#" class="footer__button">Написать нам</a>
+					     </div>
+						<a href="#" class="footer__mail">info@your-services.ru</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+</body>
+</html>

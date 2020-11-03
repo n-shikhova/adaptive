@@ -1,0 +1,132 @@
+.message{
+  &__container{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  &__title{
+  margin-bottom:4rem;
+  }
+  &__box{
+    padding: 1.5rem 0;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    &:nth-child(even){
+      background-color: #eeeeee;
+    }
+    &:nth-child(odd){
+      background-color: #fff;
+    }
+    
+
+  }
+  &__photo{
+  float:left; 
+  width:15%;    
+    margin-left: 4rem;
+    
+	& img{
+    
+	height: 7rem;
+	border-radius: 50%;
+	border: 2px solid rgb(102 204 102);
+	}
+  }
+  &__online{
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: green;
+    border: 1px solid #999;
+    border-radius: 10px;       
+    text-align: center;
+    padding: 0.5rem 1rem;
+
+  }
+  &__info{
+    margin-left: 3rem;
+	float:left; 
+	width:40%;
+  }
+  &__name{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  &__text{
+    font-size: 16px;
+  }
+  &__mess{
+  float:left; 
+  width:40%
+  }
+  &__letter{
+    margin-right: 37px;
+    margin-top: -60px;
+     & img{
+		width:3.5rem;	
+}
+  }
+  &__col{
+    margin-top: -60px;
+
+  }
+  &__all{
+    font-size: 16px;
+    span{
+      color: green;
+    }
+  }
+  &__last{
+    font-size: 16px;
+    span{
+      color: green;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 900px) {
+.message__photo {
+    width: 30%;  
+	
+
+}
+.message__info { 
+  margin-bottom: 1rem;
+  width: 69%;
+  
+}
+
+
+.message__letter, .message__all, .message__last{display: none;}
+
+
+
+
+}
+
+@media screen and (max-width: 650px) {
+.message__photo {
+    width: 100%;  
+	float: none;
+
+}
+.message__info { 
+  margin-bottom: 4rem;
+  width: 100%;
+  float: none;
+}
+
+.message__box {
+  
+  display: block;
+  align-items: center;
+}
+
+.message__letter, .message__all, .message__last{display: none;}
+
+
+
+
+}
